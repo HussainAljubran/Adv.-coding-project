@@ -5,7 +5,11 @@
 
 ``` SQL
 USE project;
+SELECT *
+FROM KSA_Entertainment;
 ```
+<img width="1041" alt="image" src="https://github.com/user-attachments/assets/e0c07253-3660-49b7-874c-e2c20839bf4e" />
+
 ## Q1. Identify the top tourist attractions with the highest number of reviews.
 ``` SQL
 SELECT name, rating, review_count, location
