@@ -57,6 +57,52 @@ LIMIT 1;
 ```
 <img width="385" alt="image" src="https://github.com/user-attachments/assets/c33f928c-013f-4919-9299-8a2d146578ff" />
 
+## Q6. Retrieve all bowling alleys in Riyadh, Saudi Arabia.
+``` SQL
+SELECT name, rating, review_count, location
+FROM KSA_Entertainment
+WHERE genre = ' Bowling alley' AND location LIKE '%Riyadh Saudi Arabia%'
+```
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/150da834-3583-4615-8c3f-6d26d4adb346" />
+
+## Q7. Retrieve the best-reviewed tourist attractions in Jeddah, Saudi Arabia.
+``` SQL
+SELECT name, rating, review_count, location
+FROM KSA_Entertainment
+WHERE genre = ' Tourist attraction' AND location LIKE '%Jeddah Saudi Arabia%'
+```
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/ad79d9e1-11a8-468a-98ee-1734e4418943" />
+
+## Q8. Find the top-rated science museum in Al Khobar, Saudi Arabia.
+``` SQL
+SELECT name, rating, review_count, location
+FROM KSA_Entertainment
+WHERE genre = ' Science museum' AND location LIKE '%Al Khobar Saudi Arabia%'
+ORDER BY rating DESC, review_count DESC
+LIMIT 1;
+```
+<img width="410" alt="image" src="https://github.com/user-attachments/assets/09123bdc-81e7-433e-8b69-5f20127c8614" />
+
+## Q9. Find the top-rated Movie theater in Saudi Arabia.
+``` SQL
+SELECT name, rating, review_count, location
+FROM KSA_Entertainment
+WHERE genre =  ' Movie theater' AND location LIKE '%Saudi Arabia%'
+ORDER BY rating DESC, review_count DESC
+LIMIT 5;
+```
+<img width="686" alt="image" src="https://github.com/user-attachments/assets/04fcc018-b970-4b72-a590-3ada6c114f4b" />
+
+## Q10. Find the top-rated Movie theater in Dammam, Saudi Arabia.
+``` SQL
+SELECT name, rating, review_count, location
+FROM KSA_Entertainment
+WHERE genre =  ' Movie theater' AND location LIKE '%Dammam Saudi Arabia%'
+ORDER BY rating DESC, review_count DESC
+LIMIT 3;
+```
+<img width="686" alt="image" src="https://github.com/user-attachments/assets/6d885595-eda5-4e0e-9cba-e63949874b3e" />
+
 
 
 
